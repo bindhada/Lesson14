@@ -56,3 +56,7 @@ header { position:sticky; top:0; z-index:100; }
 .why-choose__images img { object-fit:cover; border-radius:1px; }
 .why-choose__images img:first-child { width:72%; height:165px; }
 .why-choose__images img:last-child  { width:88%; height:195px; }
+
+/* === _how-it-works === */
+.how-it-works { background: #2a2d35; }
+.how-it-works img { width: 100%; display: block; }
