@@ -1,0 +1,84 @@
+// ============================================================
+// _hero.scss — hero / landing section
+// ============================================================
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem 6rem;
+  overflow: hidden;
+
+  &__logo {
+    font-family: $font-display;
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: $white;
+    margin: 0 0 0.15rem;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.35);
+  }
+
+  &__tagline {
+    font-size: clamp(0.7rem, 1.8vw, 0.9rem);
+    letter-spacing: 0.45em;
+    font-weight: 300;
+    color: $text-light;
+    margin: 0 0 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__search {
+    display: flex;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto 2.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+
+    input {
+      flex: 1; min-width: 0;
+      padding: 0.95rem 1.4rem;
+      border: none; outline: none;
+      font-family: $font-body;
+      font-size: 0.82rem; letter-spacing: 0.08em;
+      color: #666; background: #fff;
+
+      &::placeholder { color: #bbb; }
+    }
+
+    button {
+      padding: 0.95rem 1.5rem;
+      background: $primary; border: none;
+      color: $white; font-family: $font-body;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      cursor: pointer; display: flex; align-items: center; gap: 0.5rem;
+      transition: background $tr; white-space: nowrap;
+
+      &:hover, &:focus {
+        background: $primary-dark;
+        outline: 2px solid rgba(255,255,255,0.5);
+        outline-offset: -2px;
+      }
+    }
+  }
+
+  &__scroll {
+    display: inline-flex; flex-direction: column;
+    align-items: center; gap: 0.3rem;
+    color: $text-light; font-size: 0.7rem;
+    letter-spacing: 0.3em; text-transform: uppercase;
+    cursor: pointer; background: none; border: none;
+    animation: bounce 2s infinite;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
