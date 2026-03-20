@@ -1,7 +1,6 @@
 // main.scss — entry point
-// Compile: sass scss/main.scss css/main.css
-
 @use 'partials/variables' as *;
 @use 'partials/base';
 @use 'partials/buttons';
 @use 'partials/hero';
+@use 'partials/navbar';

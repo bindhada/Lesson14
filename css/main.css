@@ -37,3 +37,12 @@ a    { text-decoration: none; color: inherit; }
 .hero__search button:hover,.hero__search button:focus { background:#3547c7; outline:2px solid rgba(255,255,255,0.5); outline-offset:-2px; }
 .hero__scroll { display:inline-flex; flex-direction:column; align-items:center; gap:0.3rem; color:rgba(255,255,255,0.85); font-size:0.7rem; letter-spacing:0.3em; text-transform:uppercase; cursor:pointer; background:none; border:none; animation:bounce 2s infinite; }
 @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
+
+/* === _navbar === */
+header { position:sticky; top:0; z-index:100; }
+.navbar { background:#5060e0; padding:0 2.5rem; display:flex; align-items:center; justify-content:space-between; min-height:56px; }
+.navbar__brand { font-family:'Cinzel',serif; font-size:0.95rem; font-weight:700; letter-spacing:0.28em; color:#ffffff; }
+.navbar__nav { list-style:none; margin:0; padding:0; display:flex; gap:2.2rem; }
+.navbar__nav a { font-size:0.7rem; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.88); transition:color 0.3s ease; padding:1.1rem 0; display:block; }
+.navbar__nav a:hover,.navbar__nav a:focus { color:#ffffff; text-decoration:underline; outline:none; }
+.navbar__toggle { display:none; background:none; border:none; color:#ffffff; font-size:1.4rem; cursor:pointer; padding:0.4rem; }

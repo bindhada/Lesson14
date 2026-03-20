@@ -1,0 +1,32 @@
+// _navbar.scss — sticky navigation bar
+
+header { position:sticky; top:0; z-index:100; }
+
+.navbar {
+  background: $nav-bg;
+  padding: 0 2.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 56px;
+
+  &__brand {
+    font-family: $font-display; font-size:0.95rem;
+    font-weight:700; letter-spacing:0.28em; color:$white;
+  }
+
+  &__nav {
+    list-style:none; margin:0; padding:0; display:flex; gap:2.2rem;
+
+    a {
+      font-size:0.7rem; font-weight:600; letter-spacing:0.15em;
+      text-transform:uppercase; color:rgba(255,255,255,0.88);
+      transition:color $tr; padding:1.1rem 0; display:block;
+
+      &:hover, &:focus { color:$white; text-decoration:underline; outline:none; }
+    }
+  }
+
+  &__toggle {
+    display:none; background:none; border:none;
+    color:$white; font-size:1.4rem; cursor:pointer; padding:0.4rem;
+  }
+}
