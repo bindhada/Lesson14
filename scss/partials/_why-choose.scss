@@ -1,0 +1,38 @@
+// _why-choose.scss
+
+.why-choose {
+  position: relative;
+  min-height: 580px;
+  display: flex; align-items: center;
+  overflow: hidden;
+
+  &__inner {
+    max-width: 1100px; width: 100%; margin: 0 auto;
+    padding: 5rem 4rem;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: center;
+  }
+
+  &__text {
+    h2 {
+      font-family: $font-display;
+      font-size: clamp(1.5rem, 2.8vw, 2rem); font-weight: 400;
+      margin: 0 0 1.4rem; letter-spacing: 0.05em;
+    }
+    p {
+      font-size: 0.88rem; font-weight: 300;
+      line-height: 1.85; color: $text-light; margin-bottom: 1rem;
+    }
+  }
+
+  &__images {
+    display: flex; flex-direction: column;
+    gap: 1rem; align-items: flex-end;
+
+    img {
+      object-fit: cover; border-radius: 1px;
+      &:first-child { width: 72%; height: 165px; }
+      &:last-child  { width: 88%; height: 195px; }
+    }
+  }
+}
