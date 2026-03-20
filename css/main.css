@@ -60,3 +60,13 @@ header { position:sticky; top:0; z-index:100; }
 /* === _how-it-works === */
 .how-it-works { background: #2a2d35; }
 .how-it-works img { width: 100%; display: block; }
+
+/* === _destinations === */
+.destination { position:relative; overflow:hidden; }
+.destination__bg { width:100%; display:block; height:580px; object-fit:cover; }
+.destination__card-wrap { position:absolute; inset:0; display:flex; align-items:center; padding:2rem 4rem; }
+.destination--2 .destination__card-wrap { justify-content:flex-end; }
+.destination__card { background:rgba(15,17,24,0.85); backdrop-filter:blur(6px); padding:1.8rem 2.2rem; max-width:350px; border-left:3px solid #4a5de8; }
+.destination__region { font-size:0.7rem; letter-spacing:0.25em; text-transform:uppercase; color:rgba(255,255,255,0.6); margin-bottom:0.4rem; }
+.destination__name { font-family:'Cinzel',serif; font-size:1.05rem; font-weight:700; letter-spacing:0.12em; margin:0 0 0.9rem; color:#ffffff; }
+.destination__desc { font-size:0.82rem; font-weight:300; line-height:1.75; color:rgba(255,255,255,0.85); margin-bottom:1.4rem; }
