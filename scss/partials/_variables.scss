@@ -1,0 +1,32 @@
+// ============================================================
+// _variables.scss — design tokens
+// ============================================================
+
+// Colors
+$primary:       #4a5de8;
+$primary-dark:  #3547c7;
+$accent-red:    #e05252;
+$accent-blue:   #4ab4e8;
+$white:         #ffffff;
+$dark-bg:       #1e2028;
+$dark-bg-2:     #2a2d35;
+$footer-bg:     #222428;
+$nav-bg:        #5060e0;
+$linkedin-blue: #5b7de8;
+
+// Text
+$text-light: rgba(255, 255, 255, 0.85);
+$text-muted: rgba(255, 255, 255, 0.6);
+
+// Typography
+$font-display: 'Cinzel', serif;
+$font-body:    'Raleway', sans-serif;
+
+// Transitions
+$tr: 0.3s ease;
+
+// Breakpoints
+$bp-lg: 900px;
+$bp-md: 768px;
+$bp-sm: 580px;
+$bp-xs: 320px;
